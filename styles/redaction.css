@@ -1,0 +1,28 @@
+body {
+  background-color: #f9fbf9;
+}
+
+.fullscreen {
+  z-index: 1001;
+}
+
+.tool .tool__preview-scroll span.blurred {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  text-shadow: #eae7e7 0px 0px .55em;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.tool .bg-black.tool__preview-scroll span.blurred {
+  text-shadow: #252828 0px 0px .55em;
+}
+
+.tool .tool__preview-scroll span.blurred:hover {
+  text-shadow: #555555 0px 0px 0px;
+}
+
+.tool .tool__preview-scroll.bg-black span.blurred:hover {
+  text-shadow: #fff 0px 0px 0px;
+}

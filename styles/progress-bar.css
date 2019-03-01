@@ -1,0 +1,102 @@
+@keyframes b {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  20% {
+    -webkit-animation-timing-function: cubic-bezier(.5,0,.7,.5);
+    animation-timing-function: cubic-bezier(.5,0,.7,.5);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  60% {
+    -webkit-animation-timing-function: cubic-bezier(.3,.38,.55,.96);
+    animation-timing-function: cubic-bezier(.3,.38,.55,.96);
+    -webkit-transform: translateX(83.67%);
+    transform: translateX(83.67%);
+  }
+
+  to {
+    -webkit-transform: translateX(200.61%);
+    transform: translateX(200.61%);
+  }
+}
+
+@keyframes d {
+  0% {
+    -webkit-animation-timing-function: cubic-bezier(.15,0,.52,.41);
+    animation-timing-function: cubic-bezier(.15,0,.52,.41);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25% {
+    -webkit-animation-timing-function: cubic-bezier(.31,.28,.8,.73);
+    animation-timing-function: cubic-bezier(.31,.28,.8,.73);
+    -webkit-transform: translateX(37.65%);
+    transform: translateX(37.65%);
+  }
+
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(.4,.63,.6,.9);
+    animation-timing-function: cubic-bezier(.4,.63,.6,.9);
+    -webkit-transform: translateX(84.39%);
+    transform: translateX(84.39%);
+  }
+
+  to {
+    -webkit-transform: translateX(160.28%);
+    transform: translateX(160.28%);
+  }
+}
+
+.md-progress-bar {
+  height: 2px;
+  background: #00bd7042;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0) scaleY(1);
+  transform-origin: center center;
+  transition: opacity .3s cubic-bezier(.4,0,.2,1),transform .4s cubic-bezier(.4,0,.2,1);
+  will-change: opacity,transform;
+}
+
+.md-progress-bar-buffer, .md-progress-bar-buffer:after, .md-progress-bar-fill, .md-progress-bar-fill:after, .md-progress-bar-track, .md-progress-bar-track:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  will-change: transform;
+}
+
+.md-progress-bar-buffer, .md-progress-bar-fill, .md-progress-bar-track {
+  transform-origin: top left;
+}
+
+.md-progress-bar.md-indeterminate .md-progress-bar-track, .md-progress-bar.md-query .md-progress-bar-track {
+  left: -150%;
+  animation: b 2s infinite linear;
+}
+
+.md-progress-bar.md-indeterminate .md-progress-bar-fill, .md-progress-bar.md-query .md-progress-bar-fill {
+  left: -55%;
+  animation: d 2s infinite linear;
+}
+
+.md-progress-bar-buffer, .md-progress-bar-buffer:after, .md-progress-bar-fill, .md-progress-bar-fill:after, .md-progress-bar-track, .md-progress-bar-track:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  will-change: transform;
+}
+
+.md-progress-bar-buffer:after, .md-progress-bar-fill:after, .md-progress-bar-track:after {
+  display: inline-block;
+  left: 0;
+  content: " ";
+}
+
+.md-progress-bar-track, .md-progress-bar-fill {
+  background: #00bd70;
+}

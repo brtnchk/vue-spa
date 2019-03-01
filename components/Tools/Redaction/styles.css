@@ -1,0 +1,112 @@
+.tool .tool__control-slider {
+  width: 100%;
+}
+
+.tool .form__field--range {
+  margin-bottom: 0 !important;
+}
+
+.tool .form__field--range input {
+  background-color: rgba(216, 216, 216, 0.8);
+}
+
+.tool .tool__control-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.tool .tool__control-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.tool .tool__preview {
+  padding: 0 0 90px !important;
+}
+
+.tool .tool_top-bar {
+  padding: 40px 55px;
+}
+
+.tool .tool_top-bar input[type="number"] {
+  display: inline;
+  width: 40%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tool .tool_top-bar input[type="number"]:focus {
+  box-shadow: none;
+}
+
+.tool .tool_top-bar input[type=number]::-webkit-inner-spin-button,
+.tool .tool_top-bar input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tool .tool__preview-scroll {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*max-height: 357px !important;*/
+}
+.tool .tool__preview-scroll > p {
+  max-height: 270px !important;
+}
+
+.tool .tool__preview-scroll span.blurred {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  text-shadow: #eae7e7 0px 0px .55em;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.tool .bg-black.tool__preview-scroll span.blurred {
+  text-shadow: #252828 0px 0px .55em;
+}
+
+.tool .tool__preview-scroll span.blurred:hover {
+  text-shadow: #555555 0px 0px 0px;
+}
+
+.tool .tool__preview-scroll.bg-black {
+  background-color: #000;
+}
+
+.tool .tool__preview-scroll.bg-black span.blurred:hover {
+  text-shadow: #fff 0px 0px 0px;
+}
+
+.tool .icon-star-full {
+  font-size: 22px;
+}
+
+.tool .c-dropdown .dropdown-menu.dropdown-menu-right {
+  -webkit-transform: translate3d(-10px, -4px, 0px) !important;
+  transform: translate3d(-10px, -4px, 0px) !important;
+}
+
+.tool .c-dropdown .dropdown-menu.dropdown-menu-right.dropdown-keyboard {
+  top: -700px !important;
+}
+
+.tool .c-dropdown .dropdown-menu.dropdown-menu-right.dropdown-star {
+  top: -158px !important;
+}
+
+.tool .c-dropdown .dropdown-menu.down::before {
+  bottom: -7px !important;
+  left: 15px !important;
+  top: unset;
+}

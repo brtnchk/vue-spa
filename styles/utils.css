@@ -1,0 +1,22 @@
+.rotate-this-on-45-deg {
+  transform: rotate(45deg) !important;
+}
+
+.me-snuggle-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.me-overflow-hidden {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-align-center {
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+/*
+ Add here you global styles for rewriting and fix as you need.
+ Don't add styles if you able to solve problem with local styles for some component.
+*/
+@import "styles/progress-bar.css";
+@import "styles/utils.css";
+@import "styles/redaction.css";
+
+
+.c-modal--courseSaveNotes .btn__wrapper-add .c-btn:last-of-type i {
+  transform: rotate(0deg);
+}
